@@ -283,7 +283,7 @@
       }
     }
   };
-  MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+  var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
   watermarkDom = new MutationObserver(callback);
   option = {
     'childList': true,
