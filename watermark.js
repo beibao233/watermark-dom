@@ -43,7 +43,7 @@
     monitor:true,                   //monitor 是否监控， true: 不可删除水印; false: 可删水印。
   };
 
-  const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+  var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 
   //监听dom是否被移除或者改变属性的回调函数
   var domChangeCallback = function (records){
