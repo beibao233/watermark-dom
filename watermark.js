@@ -283,9 +283,9 @@
       }
     }
   };
-  const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-  var watermarkDom = new MutationObserver(callback);
-  var option = {
+  MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+  watermarkDom = new MutationObserver(callback);
+  option = {
     'childList': true,
     'attributes': true,
     'subtree': true,
